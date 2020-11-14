@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#263238"
+    android:background="#D8DCDD"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,7 +15,7 @@
         android:fontFamily="@font/advent_pro_medium"
         android:includeFontPadding="true"
         android:text="Library"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -24,10 +24,10 @@
 
     <Button
         android:id="@+id/buttonAllBooks"
-        android:layout_width="230dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Show All Books"
+        android:text="Catalogue"
         android:textAllCaps="false"
         app:backgroundTint="#8E0909"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,10 +36,10 @@
 
     <Button
         android:id="@+id/buttonCurrentlyReading"
-        android:layout_width="230dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Currently Reading Books"
+        android:text="Reading"
         android:textAllCaps="false"
         app:backgroundTint="#8E0909"
         app:layout_constraintEnd_toEndOf="@+id/buttonAllBooks"
@@ -48,10 +48,10 @@
 
     <Button
         android:id="@+id/buttonAlreadyRead"
-        android:layout_width="230dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Already Read"
+        android:text=" Read"
         android:textAllCaps="false"
         app:backgroundTint="#8E0909"
         app:layout_constraintEnd_toEndOf="@+id/buttonCurrentlyReading"
@@ -60,7 +60,7 @@
 
     <Button
         android:id="@+id/buttonWantToRead"
-        android:layout_width="230dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Wish List"
@@ -72,7 +72,7 @@
 
     <Button
         android:id="@+id/buttonFavoriteBooks"
-        android:layout_width="230dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Favorites"
@@ -86,7 +86,7 @@
         android:id="@+id/imageLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="50dp"
         android:src="@mipmap/logoz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,23 +96,23 @@
         android:id="@+id/textLicense"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/cutive_mono"
         android:text="K'onyango"
-        android:textColor="#FFFFFF"
+        android:textColor="#090808"
         android:textSize="18sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/buttonAbout"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="@+id/buttonAbout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonAbout"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/buttonAbout"
-        android:layout_width="230dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="About"
