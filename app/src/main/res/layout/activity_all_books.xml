@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#263238"
+    android:background="#F3F6F8"
     tools:context=".AllBooksActivity">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -12,5 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="258dp" />
+        tools:layout_editor_absoluteY="258dp"
+        android:layout_margin="15dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

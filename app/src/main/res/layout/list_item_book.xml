@@ -9,27 +9,90 @@
     app:cardElevation="7dp">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+       >
 
-        <ImageView
-            android:id="@+id/imgBook"
-            android:layout_width="130dp"
-            android:layout_height="150dp"
-            android:layout_margin="5dp"
-            android:src="@mipmap/book" />
-
-        <TextView
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imgBook"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="7dp"
-            android:text="Book Name"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:id="@+id/textBookName"/>
+            android:id="@+id/collapsedRelativeLayout"
+            android:layout_marginBottom="7dp"
+           >
+
+            <ImageView
+                android:id="@+id/imgBook"
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                android:layout_margin="5dp"
+                android:src="@mipmap/ic_launcher" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgBook"
+
+                android:layout_marginTop="7dp"
+                android:text="Book Name"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/textBookName"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_down_arrow_colored"
+                android:layout_below="@+id/imgBook"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/btnDownArrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="7dp"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/collapsedRelativeLayout"
+            android:id="@+id/expandedRelativeLayout"
+            android:layout_marginBottom="7dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/authorText"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meisam"
+                android:id="@+id/textAuthor"
+                android:layout_below="@+id/authorText"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="short description"
+                android:id="@+id/textShortDescription"
+                android:layout_below="@id/textAuthor"
+                android:layout_marginTop="70dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_up_arrow_colored"
+                android:layout_below="@id/textShortDescription"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/btnUpArrow"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
     </RelativeLayout>
+
+
 
 </com.google.android.material.card.MaterialCardView>
