@@ -22,33 +22,7 @@ public class AllBooksActivity extends AppCompatActivity {
         booksRecyclerView.setAdapter(adapter);
         booksRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        ArrayList<Book> books = new ArrayList<>();
-        books.add(new Book(
-                1,
-                "Sulwe",
-                "lupita",
-                15,
-                "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1554153712i/42785750._UY400_SS400_.jpg",
-                "luo narrative",
-                "long description"));
 
-        books.add(new Book(
-                2,
-                "Amara the Brave",
-                "Matt Zhang",
-                315,
-                "https://marketplace.canva.com/EAD7WWWtKSQ/1/0/251w/canva-purple-and-red-leaves-illustration-children%27s-book-cover-hNI7HYnNVQQ.jpg",
-                "luo narrative",
-                "long description"));
-
-        books.add(new Book(
-                3,
-                "Winter Solace",
-                "Angelina McDunnel",
-                315,
-                "https://lh3.googleusercontent.com/proxy/Vv7soqhyJVvFgyjsADbAw7Uhi0K42BS_uZD6QFuLOMcOgHE57ob4eleBWGw_ZD4Ebv0Gl_b2zC9bAaY1TcWZGhTCHJWlCzxxEawGi07pgy-xEBlKtB5NLh8N9moQx5mPbFwtzI9ozg",
-                "luo narrative",
-                "long description"));
-        adapter.setBooks(books);
+        adapter.setBooks(Utils.getInstance().getAllBooks());
     }
 }
